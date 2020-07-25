@@ -1,0 +1,235 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+}
+
+.top-block {
+    width: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000042;
+    border-radius: 0 0 25px 25px;
+    margin: auto;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -ms-border-radius: 0 0 25px 25px;
+    -o-border-radius: 0 0 25px 25px;
+}
+
+.inner-text {
+    width: 39px;
+    height: 39px;
+    background-color: #5F41B6;
+    border-radius: 11px;
+    margin: auto;
+    position: relative;
+    top: 4px;
+}
+
+.inner-text p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #FFEE00;
+    font: Bold 25px;
+    font-size: 12px;
+}
+
+main {
+    height: 800px;
+    position: relative;
+    background: #48276e url('/assets/images/bg.png') no-repeat top center;
+    background-size: cover;
+
+    @media (max-width: 575.98px) {
+        height: 1050px;
+    }
+}
+
+.layer {
+    /* background: #4621AD 0% 0% no-repeat padding-box;
+    opacity:0.83;
+    height: 100%; */
+    background-color: rgba(70, 33, 173, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.83;
+
+}
+
+.navbar-nav .nav-link {
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.form-inline .form-control {
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    background-color: #F6F6F6;
+    opacity: 1;
+}
+
+.icon-set {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    @media (max-width: 575.98px) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .navbar {
+        background: #BCBCCB;
+        box-shadow: 0px 2px 6px #0000000A;
+    }
+
+    .navbar button:focus {
+        outline: none;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.icon-set>div {
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+.icon-set i {
+    font-size: 40px;
+    color: #FFEE00;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons .btn {
+    width: 250px;
+    border-radius: 22px;
+    margin: 24px;
+}
+
+.article-card {
+    width: 231px;
+    height: 231px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px #00000029;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        // background-color: #F2F8F9;
+    }
+
+    .avatar {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+    }
+
+
+
+
+}
+
+.rules-card {
+    width: 120px;
+    height: 140px;
+    border-image-width: 100px;
+    border-radius: 10px;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.card-deck {
+    @media (max-width: 575.98px) {
+        align-items: center;
+    }
+}
+
+.global-card {
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000029;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: #F2F8F9;
+    }
+}
+
+.plus-box {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 10px;
+    }
+}
+
+.show-wrap {
+    @media (max-width: 575.98px) {
+        margin: 10px;
+
+        .show-details {
+            margin-top: 10px;
+        }
+    }
+}
+
+.search-bar {
+    input {
+        position: relative;
+    }
+
+    i {
+        position: absolute;
+        top: 36%;
+        margin-left: 17px;
+        z-index: 1;
+        color: #4f5b66;
+
+        @media (max-width: 575.98px) {
+            top: 30%;
+        }
+    }
+}
